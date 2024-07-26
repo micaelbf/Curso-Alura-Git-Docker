@@ -24,6 +24,6 @@ jobs:
        context: .
        file: ./Dockerfile 
        push: true
-       tags: micaelbf/go_ci:aula-5
+       tags: micaelbf/go_ci
        
         
