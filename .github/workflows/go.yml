@@ -46,14 +46,8 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: Build
-      run: go build -v main.go
-    
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v4.3.4
-      with:
-        name: programa
-        path: main.exe
-          
+      run: go build -v main.go  
+      
   docker:
     needs: build
     uses: ./.github/workflows/docker.yml
